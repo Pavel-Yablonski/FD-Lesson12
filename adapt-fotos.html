@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1200px;
+            min-width: 320px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .foto-gallery {
+            display: block;
+            font-size: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .foto-gallery img {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .foto-gallery img:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .fotos {
+            display: inline-block;
+        }
+
+        @media (max-width: 980px) {
+            .foto-gallery img{
+                width: 32%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .foto-gallery img {
+                width: 49%;
+            }
+
+            .foto-gallery img {
+                margin-right: 2%;
+            }
+
+
+            .foto-gallery img:nth-child(3n) {
+                margin-right: 2%;
+            }
+
+            .foto-gallery img:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            .fotos {
+                text-align: left;
+                margin: 0 20px;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .foto-gallery img {
+                width: 90%;
+                margin-right: 0;
+            }
+
+            .foto-gallery img:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+
+            .fotos {
+                text-align: center;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Адаптивная вёрстка галереи</h1>
+
+    <div class="foto-gallery">
+        <div class="fotos">
+            <img src="imgs/gallery/1.jpg" alt="tree">
+            <img src="imgs/gallery/2.jpg" alt="hause-mountains">
+            <img src="imgs/gallery/3.jpg" alt="mountains">
+            <img src="imgs/gallery/4.jpg" alt="small-tree">
+            <img src="imgs/gallery/5.jpg" alt="lake">
+            <img src="imgs/gallery/6.jpg" alt="lake-mountains">
+            <img src="imgs/gallery/7.jpg" alt="lake-mountains2"> 
+            <img src="imgs/gallery/8.jpg" alt="tree-sun">
+            <img src="imgs/gallery/9.jpg" alt="sunset">
+        </div>
+    </div>
+</body>
+</html>
